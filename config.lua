@@ -11,4 +11,5 @@ require "user.lsp-hints"
 require "user.autocommands"
 require "user.copilot"
 require "user.dial"
+require "user.bqf"
 -- TODO: add more feature

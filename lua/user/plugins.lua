@@ -1,5 +1,6 @@
 lvim.plugins = {
   -- "rcarriga/nvim-dap-ui",
+  "kevinhwang91/nvim-bqf",
   "karb94/neoscroll.nvim",
   "windwp/nvim-ts-autotag",
   { "kylechui/nvim-surround" },
