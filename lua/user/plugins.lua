@@ -78,6 +78,10 @@ lvim.plugins = {
     end,
   },
   "monaqa/dial.nvim",
+  "jose-elias-alvarez/typescript.nvim",
+  "mxsdev/nvim-dap-vscode-js",
+  "mfussenegger/nvim-dap-python",
+  "simrat39/rust-tools.nvim",
   -- {
   --   "folke/noice.nvim",
   --   event = "VimEnter",
