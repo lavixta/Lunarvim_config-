@@ -1,0 +1,5 @@
+require('user.lsp.langs.rust')
+require('user.lsp.langs.python')
+require('user.lsp.langs.js-ts')
+require('user.lsp.langs.lua')
+require('user.lsp.langs.go')
