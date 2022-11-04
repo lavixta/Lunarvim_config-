@@ -15,4 +15,6 @@ require "user.autocommands"
 require "user.copilot"
 require "user.dial"
 require "user.bqf"
+require "user.neogit"
+-- require "user.treesitter"
 -- TODO: add more feature

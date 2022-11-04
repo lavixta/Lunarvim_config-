@@ -66,7 +66,19 @@ lvim.plugins = {
     event = { "VimEnter" },
     config = function()
       vim.defer_fn(function()
-        require("copilot").setup()
+        require("copilot").setup({
+          suggestion = {
+            enabled = true,
+            auto_trigger = false,
+            debounce = 75,
+            keymap = {
+              accept = "<C-l>",
+              next = "<C-k>",
+              prev = "<C-j>",
+              dismiss = "<C-]>",
+            },
+          }
+        })
       end, 100)
     end,
   },
@@ -82,6 +94,10 @@ lvim.plugins = {
   "mxsdev/nvim-dap-vscode-js",
   "mfussenegger/nvim-dap-python",
   "simrat39/rust-tools.nvim",
+  --Set up in file git
+  "TimUntersberger/neogit",
+  "sindrets/diffview.nvim",
+
   -- {
   --   "folke/noice.nvim",
   --   event = "VimEnter",

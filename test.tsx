@@ -1,10 +1,1 @@
-//create a sum function
-
-
-
-
-
-
-
-
-
+const a = 10; //create a sum function
