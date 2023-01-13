@@ -11,6 +11,12 @@ lvim.builtin.treesitter.highlight.enabled = true
 lvim.builtin.dap.active = true
 lvim.transparent_window = true
 vim.opt.showtabline = 0
+local list_exclude_files = { "lua", "python", "javascript", "rust" }
+for _, file in pairs(list_exclude_files) do
+	table.insert(lvim.builtin.breadcrumbs.winbar_filetype_exclude, file)
+end
+-- disable winbar
+
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
 
@@ -24,18 +30,18 @@ lvim.builtin.treesitter.autotag = true
 lvim.builtin.theme.options.dim_inactive = true
 lvim.builtin.theme.options.style = "storm"
 lvim.builtin.treesitter.ensure_installed = {
-  "bash",
-  "c",
-  "javascript",
-  "json",
-  "lua",
-  "python",
-  "typescript",
-  "tsx",
-  "css",
-  "rust",
-  "java",
-  "yaml",
+	"bash",
+	"c",
+	"javascript",
+	"json",
+	"lua",
+	"python",
+	"typescript",
+	"tsx",
+	"css",
+	"rust",
+	"java",
+	"yaml",
 }
 
 lvim.builtin.treesitter.ignore_install = { "haskell" }
